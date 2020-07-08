@@ -29,7 +29,7 @@
   align-items: center; 
 }
 
-.header__title_size_l {
+.header__title__text {
   font-size: 102px;
   font-weight: bold;
   line-height: 96px;
@@ -43,7 +43,7 @@
   z-index: 1;
 }
 
-.header__subtitle_size_m {
+.header__subtitle__text {
   font-size: 18px;
   line-height: 25px;
 }
@@ -101,5 +101,5 @@
 }
 
 div {
-  /* border: 1px solid red; */
+  border: 1px solid red;
 }
