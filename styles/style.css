@@ -10,10 +10,82 @@
 }
 
 .header {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  top: 0;
+  right: 0;
   height: 100vh;
   min-height: 600px;
   max-height: 756px;
   /* выше установили ограничения для секции */
+  margin-left: 64px;
+}
+
+.header__title {
+  width: 730px;
+  display: flex;
+  justify-content: start;
+  align-items: center; 
+}
+
+.header__title_size_l {
+  margin: 0;
+  font-size: 102px;
+  font-weight: bold;
+  line-height: 96px;
+  flex-wrap: wrap;
+}
+
+.header__subtitle {
+  position: absolute;
+  bottom: 30px;
+  width: 388px;
+  z-index: 1;
+}
+
+.header__subtitle_size_m {
+  font-size: 18px;
+  line-height: 25px;
+  font-size: none;
+}
+
+.header__mainillustration {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 765px;
+  height: 608px;
+    /* логотив поверх всех окон */
+  z-index: 1;
+}
+
+.header__mainillustration_size_m {
+  width: 100%;
+  height: 100%;
+}
+
+.header__square-pic {
+  position: absolute;
+  top: 64;
+  right: 0;
+  width: 568px;
+  height: 568px;
+  border: 1px solid #2f80ed;
+  background-color: #2f80ed;
+}
+
+.logo {
+  background-image: url(../images/logo_place_header.svg);
+}
+
+.logo_place_header {
+  position: absolute;
+  top: 30px;
+  width: 183px;
+  height: 30px;
+  /* логотив поверх всех окон */
+  z-index: 1;
 }
 
 /* ниже мы привели пример двух селекторов, чтобы вы вспомнили запись элемента */
@@ -28,4 +100,8 @@
   color: white;
   margin-right: 0;
   margin-top: 80px;
+}
+
+div {
+  border: 1px solid red;
 }
