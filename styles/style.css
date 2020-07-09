@@ -1,3 +1,9 @@
+* {
+  /* outline-width: 1px;
+  outline-style: solid;
+  outline-color: red; */
+}
+
 .page {
   min-width: 1100px;
   /* мы ещё не умеем делать мобильную версию сайта, */
@@ -26,7 +32,7 @@
   width: 730px;
   margin-left: 64px;
   display: flex;
-  align-items: center; 
+  align-items: center;
 }
 
 .header__title__text {
@@ -54,7 +60,7 @@
   right: 0;
   width: 765px;
   height: 608px;
-    /* логотив поверх всех окон */
+  /* логотив поверх всех окон */
   z-index: 1;
 }
 
@@ -87,19 +93,65 @@
 }
 
 /* ниже мы привели пример двух селекторов, чтобы вы вспомнили запись элемента */
+
 .header__square-pic {
   height: 568px;
   width: 568px;
 }
 
+.description {
+  display: flex;
+  justify-content: center;
+  /* justify-content: space-around; */
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+.two-columns {
+  display: flex;
+  flex-direction: row;
+  width: 80%;
+  justify-content: space-between;
+}
+
+.two-columns__first-column {
+  width: 175px;
+}
+
+.two-columns__brief {
+  font-size: 18px;
+  line-height: 1.2;
+  color: #2f80ed;
+}
+
+.two-columns__second-column {
+  width: 80%;
+  min-width: 784px;
+  font-size: 24px;
+  line-height: 34px;
+}
+
+.two-columns__main-text {
+  padding-bottom: 30px;
+}
+
+.two-columns__paragraph {
+  padding-bottom: 30px;
+}
+
+.two-columns__paragraph:last-child {
+  padding-bottom: unset;
+} 
+
+.two-columns__span-accent {
+  font-weight: bold;
+}
+
 /* и элемента с модификатором вида ключ-значение */
+
 .table__cell_theme_dark {
   width: 200px;
   color: white;
   margin-right: 0;
   margin-top: 80px;
-}
-
-div {
-  border: 1px solid red;
 }
