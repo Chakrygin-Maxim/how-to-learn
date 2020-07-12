@@ -323,10 +323,10 @@
 
 .footer__column_content_copyright {
   display: flex;
+  flex-direction: column;
   position: relative;
   top: 0;
   left: 0;
-  flex-direction: column;
   justify-content: space-between;
   flex-basis: 711px;
   line-height: 25px;
@@ -360,11 +360,18 @@
   line-height: 30px;
   font-size: 18px;
   font-weight: normal;
-  text-decoration: none;
-  color: white;
   text-align: left;
   list-style: none;
   margin-bottom: 16px;
+}
+
+.footer__column-link {
+  color: white;
+  text-decoration: none;
+}
+
+.footer__column-link:hover {
+  text-decoration: underline;
 }
 
 .footer__column_content_social {
