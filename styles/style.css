@@ -176,6 +176,10 @@
   font-weight: unset;
 }
 
+.section-subtitle_theme_dark {
+  color: white;
+}
+
 .table {
   padding: 0;
   display: flex;
