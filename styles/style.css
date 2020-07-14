@@ -186,7 +186,6 @@ outline-color: red;
   flex-direction: row;
   flex-wrap: wrap;
   list-style: none;
-  /* justify-content: space-around; */
   margin: 0 auto;
   width: 920px;
   padding: 0;
@@ -222,6 +221,34 @@ outline-color: red;
   font-size: 18px;
   font-weight: normal;
   text-align: center;
+}
+
+.video {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 100px;
+  margin: 0 auto;
+}
+
+.video__iframes {
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+}
+
+.video__iframe {
+  width: 515px;
+  height: 316px;
+  position: relative;
+  top: 50px;
+  margin-right: 20px;
+  z-index: 1;
+}
+
+.video__iframe:last-child {
+  margin-right: 0;
 }
 
 .digits {
