@@ -9,6 +9,13 @@
   font-family: 'Helvetica Neue', Arial, sans-serif;
 }
 
+.rotation{
+  animation-duration: 20s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-name: rotation;
+}
+
 .header {
   display: flex;
   flex-direction: row;
@@ -20,6 +27,7 @@
   max-height: 756px;
   /* выше установили ограничения для секции */
   background-color: #f2f2f2;
+  overflow: hidden;
 }
 
 .header__title {
@@ -69,6 +77,15 @@
   width: 568px;
   height: 568px;
   background-color: #2f80ed;
+}
+
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100%{
+    transform: rotate(360deg);
+  }
 }
 
 .logo {
@@ -301,6 +318,7 @@
   height: 877px;
   top: 0;
   right: -210px;
+  animation-name: rotation;
 }
 
 .footer {
