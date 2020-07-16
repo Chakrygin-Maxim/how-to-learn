@@ -1,7 +1,7 @@
 *{
-/* outline-width: 1px;
+outline-width: 1px;
 outline-style: solid;
-outline-color: red; */
+outline-color: red;
 }
 
 .page {
@@ -272,6 +272,7 @@ justify-content: space-between;
   top: 50px;
   margin-right: 20px;
   z-index: 1;
+  border: none;
 }
 
 .video__iframe:last-child {
