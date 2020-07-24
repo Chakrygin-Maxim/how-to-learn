@@ -1,0 +1,9 @@
+.header__mainillustration {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 765px;
+    height: 608px;
+    /* логотив поверх всех окон */
+    z-index: 1;
+  }
